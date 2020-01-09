@@ -1,0 +1,67 @@
+    
+  body{
+    background-color: #d6dad9;
+  }
+  
+  #wrapper{
+     position: absolute;
+     top: 50%;
+     margin-top: -240px;
+     margin-left: 25%;
+     width: 800px;
+  }
+  
+  #container1{
+    float: left;  
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px 2px rgb(39, 39, 39);
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(179,190,173);
+    background: -moz-linear-gradient(45deg, rgba(179,190,173,1) 0%, rgba(223,229,215,1) 60%, rgba(252,255,244,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%);
+    background: linear-gradient(45deg, rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); 
+  }
+  #container2{
+    float: right;
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px 2px rgb(39, 39, 39);
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(179,190,173);
+    background: -moz-linear-gradient(45deg, rgba(179,190,173,1) 0%, rgba(223,229,215,1) 60%, rgba(252,255,244,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%);
+    background: linear-gradient(45deg, rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); 
+  }
+
+  #payment{
+    width: 80%;
+    float: right;
+    padding: 95px 50px 25px 0px;
+  }
+
+  .details{
+      width: 90%;
+      float: right;
+      padding: 50px 0px 25px 50px;
+  }
+
+  #price{
+      float: right;
+      
+  }
+
+  h4.details{
+      float: left;
+  }
+  
+  #visa{
+      background-image: url("iwp-eventweb\image\visa.png");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 100px;
+  }
