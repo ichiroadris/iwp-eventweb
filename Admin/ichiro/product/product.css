@@ -53,3 +53,8 @@ body {
 .side-flex {
   display: flex;
 }
+
+.sidebar img {
+  padding: 0px 18px;
+  height: 25px;
+}
