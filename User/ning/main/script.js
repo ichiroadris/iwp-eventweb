@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 
   // Enable Carousel Controls
-  $(".carousel-control-prev").click(function p() {
+  $(".carousel-control-prev").click(function() {
     $("#myCarousel").carousel("prev");
   });
   $(".carousel-control-next").click(function() {
