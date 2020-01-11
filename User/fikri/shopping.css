@@ -1,0 +1,104 @@
+body{
+  font-family: Arial;
+}
+
+
+
+.container{
+    height: 100%;
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px inset gray;
+    border-radius: 20px;
+}
+
+.line {
+    height:1px;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:20px;
+    background:#ddd;
+  }
+
+  .event {
+    font-size: 16pt;  
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+  }
+  
+  .full-width {
+    width:200px;
+    height: 200px;
+  }
+
+
+  #shoptable{
+      width: auto;
+      height: 200px;
+      border-style: none;
+      padding: 10px 10px;
+  }
+
+  .pricethin{
+    font-size: 14pt;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-top: auto;
+  }
+
+  .pricebold{
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: auto;
+  }
+
+  #quantity{
+      margin-left: 100px;
+      width: 40px;
+      border-radius: 5px;
+  }
+
+  .remove{
+    padding-left: 50px;  
+    border: none;
+    text-decoration: underline;
+    color: blueviolet;
+    background-color: white;
+  }
+
+
+  .total {
+    float: right;
+    margin: 20px;
+  }
+
+  #totalprice{
+    font-size: 22pt;
+    font-weight: bold;
+  }
+ 
+  .end{
+    width: auto;
+    position: relative;
+    padding-top: 300px;
+  }
+
+  #btn{
+    border: none;
+    background-color: white;
+  }
+
+  #proceed{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 14pt;
+    position: relative;
+    left: 450px;
+  }
+
+  
