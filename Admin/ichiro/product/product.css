@@ -59,11 +59,28 @@ body {
 
 .sidebar div {
   padding: 6px 2px 6px 8px;
+  margin: 2px;
+}
+.sidebar div:hover {
+  background-color: #ececec;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.sidebar div:nth-child(5) {
+  background-color: rgb(164, 173, 254, 44%);
+  border-radius: 10px;
+  margin: 4px 3px;
+}
+
+.sidebar div:nth-child(5) a {
+  color: #202e78;
 }
 
 .sidebar div a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 15px;
+  margin-top: 2px;
 }
 
 .side-flex {
@@ -82,5 +99,5 @@ body {
 main {
   flex-basis: 86%;
   padding: 10px 30px;
-  color: 212b36;
+  color: #212b36;
 }
