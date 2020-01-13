@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,164 +30,260 @@
   </head>
   <body>
     <!--navbar-->
+    <nav>
+      <a href="./index.html"
+        ><img src="/media/logo/colorlogo.svg" alt="" height="60"
+      /></a>
+      <div class="account"></div>
+    </nav>
 
     <!--main image, header image and search bar-->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner blur">
-        <div class="carousel-item active">
+
+    <!--carousel-->
+    <div class="container-fluid">
+      <div id="myCarousel" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+          <li class="item3"></li>
+        </ul>
+        <div class="header">
           <img
-            src="/main/assets/img/header/imgHeader1.jpg"
-            class="d-block w-100"
-            alt="img1"
+            src="./assets/img/header/GetTicket.png"
+            alt="mainLogo"
+            id="mainLogo"
           />
+          <input type="text" placeholder="Search" class="search-bar" />
         </div>
-        <div class="carousel-item">
-          <img
-            src="/main/assets/img/header/imgHeader2.jpg"
-            class="d-block w-100"
-            alt="img2"
-          />
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/header/imgHeader1.jpg" alt="Los Angeles" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/header/imgHeader2.jpg" alt="Chicago" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/header/imgHeader3.jpg" alt="New York" />
+          </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="/main/assets/img/header/imgHeader3.jpg"
-            class="d-block w-100"
-            alt="img3"
-          />
-        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <!--cards-->
     <h2 id="cardsTitle">LATEST EVENTS</h2>
+
     <div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <div class="d-flex flex-row">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card1.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">Viper Urban at KL Tower</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Take to the streets of Kuala Lumpur and discover the best of both
+              worlds, street running and obstacles as Viper Urban makes its
+              debut at the iconic KL Tower on 18th April 2020. See the city in a
+              different light as you take on 6km + 12 Obstacles.
+            </p>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card2.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">Traders Fair 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Series of Fantastic Financial Traders Fairs and Gala Nights is
+              going to take place in Thailand, Indonesia, Malaysia, Philippines
+              and Singapore attracting the world of traders to one place during
+              in one day. Top speakers are going to make educational speeches in
+              the Fair seminar halls. The Fair program is going to be full of
+              entertainments, magic shows, lucky draws, fantastic prizes, live
+              performances and music.
+            </p>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card3.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">Value Investing Summit 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Our all-star team of speakers has successfully transformed
+              thousands of regular people into savvy investors, on track to
+              fulfil all their financial objectives. With so many stocks on the
+              market, which ones are worth buying? This simple but effective
+              formula can help you “cherry - pick” winning stocks with high
+              potential gains, while allowing you to avoid risky investments.
+              Investing based on favourable market conditions is a secure way to
+              grow your wealth. When you learn about these lucrative trends,
+              rest assured that your money will be in safe hands.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <div class="d-flex flex-row">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="./assets/img/cards/card4.jpg""
+          alt="Card image cap" />
+          <h3 class="card-header">Global Investing Made Simple</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Get insights to the 4 Step Formula that has made Kathlyn Toh
+              successful in the stock market. Earn a return better than the
+              average stock and property market, consistently - because you know
+              how to manage your own funds. Multiply your return by 3 to 5 times
+              using leverage, safely. Protect your income even during bad times.
+              Why you can achieve your financial goals sooner through investing
+              or trading.
+            </p>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card5.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">SKY DOME NYE 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Together with Red Room KL, NAHSYK is very excited to announce his
+              first NYE party. Come join him and some of the hottest acts in SEA
+              as we countdown the end of a decade with night of infectious
+              energy under the sky at Kingz Club Rooftop on Dec 31
+            </p>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card6.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">AICI 3rd Asia Conference 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Setting on stage a platform where movers and shakers of the image
+              industry can gather together in one place to interchange ideas,
+              best practices, emerging trends and case studies focusing on
+              challenging issues that continue to shape the Image Consulting
+              industry. Connecting nearly 250 image consultants and partners
+              from the Asia Pacific region, South America, Canada, United States
+              and Australia at this most anticipated education event.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <div class="d-flex flex-row">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card7.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">MyFoodTech</h3>
+          <div class="card-body">
+            <p class="card-text">
+              MYFOODTECH, Malaysia’s leading food & beverage processing and
+              packaging technology trade fair for professionals who are
+              working/finding new technologies and meeting new suppliers in the
+              F&B related industry. MYFOODTECH has been around for the past 10
+              years alongside with Malaysia International Food & Beverage (MIFB)
+              Trade Fair, Malaysia No.1 Food & Beverage Trade Fair as one of its
+              four segments. With over 5,500 food and beverage attendees
+              interested in finding new technologies and meeting new suppliers,
+              FoodTech 2018 was an immediate hit with exhibitors.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card8.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">Growing SMEs with on-demand talents</h3>
+          <div class="card-body">
+            <p class="card-text">
+              SMEs struggle with growing exponentially. Making the most out
+              every invested ringgit is not easy, and results are expected to
+              come quick. On-demand talent is an amazingly efficient way to get
+              things done, move forward. Without incurring into fixed costs,
+              SMEs can tap into a pool of talent available region-wide, gaining
+              the ability to get a project going within just a few days.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap" />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+        <div class="card flex-fill" style="width: 18rem;">
+          <img
+            class="card-img-top"
+            src="./assets/img/cards/card9.jfif"
+            alt="Card image cap"
+          />
+          <h3 class="card-header">ICDXA</h3>
+          <div class="card-body">
+            <p class="card-text">
+              The 1st International Conference on Digital Transformation and
+              Applications brings you a unique experience with the speeches from
+              renowned speakers, best presentations, roundtable discussions,
+              networking opportunities and many more.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    <hr />
 
     <!--social media icon-->
-    <div>
-      <img src="/main/assets/img/icon/icon1.png" alt="facebook-icon" />
-      <img src="/main/assets/img/icon/icon2.png" alt="twitter-icon" />
-      <img src="/main/assets/img/icon/icon3.png" alt="instagram-icon" />
+    <div class="social">
+      <img
+        src="./assets/img/icon/icon1.png"
+        alt="facebook-icon"
+        class="socialMedia"
+      />
+      <img
+        src="./assets/img/icon/icon2.png"
+        alt="twitter-icon"
+        class="socialMedia"
+        id="middle"
+      />
+      <img
+        src="./assets/img/icon/icon3.png"
+        alt="instagram-icon"
+        class="socialMedia"
+      />
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
