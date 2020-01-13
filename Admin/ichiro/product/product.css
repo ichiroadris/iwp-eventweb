@@ -49,3 +49,12 @@ body {
   text-decoration: none;
   font-size: 1.2em;
 }
+
+.side-flex {
+  display: flex;
+}
+
+.sidebar img {
+  padding: 0px 18px;
+  height: 25px;
+}
