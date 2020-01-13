@@ -1,0 +1,47 @@
+body {
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+}
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.default-img {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.malaysia-flag {
+  width: 30px;
+  height: 15px;
+}
+p {
+  text-align: center;
+}
+#box1 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 535px;
+  border: black;
+  background-color: aliceblue;
+}
+#box2 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 535px;
+  border: black;
+  background-color: aliceblue;
+}
+#box3 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 535px;
+  border: black;
+  background-color: aliceblue;
+}
