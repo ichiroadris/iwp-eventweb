@@ -68,6 +68,15 @@ body{
     background-color: white;
   }
 
+  .remove :hover{
+    cursor: pointer;
+  }
+
+  .remove img{
+    width: 20px;
+    height: 20px;
+  }
+
 
   .total {
     float: right;
@@ -90,6 +99,12 @@ body{
     background-color: white;
   }
 
+  #btn:hover{
+    cursor: pointer;
+    background: rgb(170, 169, 169);
+  }
+
+
   #proceed{
     width: 200px;
     height: 40px;
@@ -98,7 +113,13 @@ body{
     color: white;
     font-size: 14pt;
     position: relative;
+    bottom: 30px;
     left: 450px;
+  }
+
+  #proceed:hover{
+    cursor: pointer;
+    background-color: purple;
   }
 
   
