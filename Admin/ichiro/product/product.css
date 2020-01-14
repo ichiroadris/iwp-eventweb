@@ -4,16 +4,18 @@
   padding: 0;
   border: 0;
 }
+
 nav {
-  display: flex;
-  justify-content: space-between;
   padding: 10px 17px;
   background-color: #1c2260;
   color: white;
 }
 
+nav div {
+  display: inline-block;
+}
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #f4f6f8;
 }
 
@@ -27,27 +29,56 @@ body {
   padding-left: 20px;
   border: none;
   margin-top: 8px;
-  margin-right: 16px;
+  margin-right: 10px;
+  margin-left: 15px;
   font-size: 15px;
   color: white;
 }
 
 ::placeholder {
   color: white;
-  /* padding-left: 20px */
 }
 
 .account {
-  padding-top: 15px;
+  margin-top: 8px;
+  margin-left: 15px;
+  width: 15%;
+}
+
+.sidebar {
+  border-right: var(
+    --p-override-none,
+    0.1rem solid var(--p-border-subdued, #dfe3e8)
+  );
+  padding-top: 10px;
+  height: 100vh;
 }
 
 .sidebar div {
-  padding: 4px 10px;
+  padding: 6px 2px 6px 8px;
+  margin: 2px;
+}
+.sidebar div:hover {
+  background-color: #ececec;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+.sidebar div:nth-child(5) {
+  background-color: rgb(164, 173, 254, 44%);
+  border-radius: 10px;
+  margin: 4px 3px;
+}
+
+.sidebar div:nth-child(5) a {
+  color: #202e78;
 }
 
 .sidebar div a {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 15px;
+  margin-top: 2px;
+  color: black;
 }
 
 .side-flex {
@@ -57,4 +88,19 @@ body {
 .sidebar img {
   padding: 0px 18px;
   height: 25px;
+}
+
+.main-sect {
+  display: flex;
+}
+
+main {
+  flex-basis: 86%;
+  padding: 10px 30px;
+  color: #212b36;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
 }

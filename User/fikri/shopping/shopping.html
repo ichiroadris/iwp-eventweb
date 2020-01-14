@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+</head>
+<body>
+    <fieldset class="container">
+            <h1>Shopping Bag</h1>
+            <div class="line"></div>
+            <table id="shoptable">
+                <tr>
+                    <td rowspan="2"><img src="../../image/Hujan.jpg" class='full-width'></img>
+                    </td>
+                    <td rowspan="2">
+                    <span class="event">Hujan Live on Stage </span>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 January 2020
+                    </td>
+                    <td rowspan="2"><span class="pricethin">RM50</span> </td>
+                    <td rowspan="2"><input type="number" name="amount" id="quantity" value="1" min="1" max="10"></td>
+                    <td><span class="pricebold">RM50</span></td>
+                    <br><br>
+                    <td><button class="remove"><img src="../../image/trash-can.png"></button></td>
+                </tr>
+            </table> 
+            <div class="line"></div>
+            <table id="shoptable">
+                <tr>
+                    <td rowspan="2"><img src="../../image/iqbalm.jpg" class='full-width'></img>
+                    </td>
+                    <td rowspan="2">
+                    <span class="event">IqbalM Modenrokes </span>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29 January 2020
+                    </td>
+                    <td rowspan="2"><span class="pricethin">RM40</span> </td>
+                    <td rowspan="2"><input type="number" name="amount" id="quantity" value="2" min="1" max="10"></td>
+                    <td><span class="pricebold">RM80</span></td>
+                    <br><br>
+                    <td><button class="remove"><img src="../../image/trash-can.png"></button></td>
+                </tr>
+            </table> 
+            <div class="line"></div>
+            <table class="total">
+                
+                <tr>
+                    <td><h3>Subtotal</h3></td>
+                    <td><span class="pricethin">RM 130</span></td>
+                </tr>
+                <tr>
+                    <td><h3>Estimated Tax</h3></td>
+                    <td><span class="pricethin">RM 7.80</span></td>
+                    
+                </tr>
+                <td><div class="line"></div></td>   
+                <tr> 
+                   <td><span id="totalprice">Total</span></td>
+                   <td><span id="totalprice">RM 137.80</span></td>
+               </tr>
+            </table>
+            <table class="end">
+                <tr>
+                    <td><button id="btn">Continue Shopping</button> | </td>
+                    <td><button id="btn">Save Bag</button></td>
+                    <td><button id="proceed">Proceed to Checkout</button></td>
+                </tr>
+            </table>
+
+    </fieldset>
+</body>
+</html>

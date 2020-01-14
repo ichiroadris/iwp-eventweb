@@ -2,74 +2,25 @@
 <html>
 <head>
      <title>Admin Login</title>
-     <style>
-          h1{
-               text-align: center;
-               font-weight: bold;
-               
-          }
 
-          #login-form{
-               padding: 5px;
-               text-align: center;
-          }
+     <link rel="stylesheet" href="login.css">
+	 <style>
+		 
 
-          fieldset{
-               width: 400px;
-               margin: auto;
-               margin-top: 200px;
-               border: hidden;
-               box-shadow: 5px 5px #CCC;
-          }
-
-          #login-form input[type=email], #login-form input[type=password]{
-			width: 200px;
-			height: 25px;
-               background: rgb(226, 226, 226);
-			border: 1px solid #DDD;
-			border-radius: 5px;
-			padding: 5px 10px 5px 40px;
-			background-repeat: no-repeat;
-			background-position: 10px 10px;
-		}
-
-		#login-form input[type=email]{
-			background-image: url('image/email.png');
-		}
-
-		#login-form input[type=password]{
-			background-image: url('image/key.png');
-			
-		}
-
-          #login-form input[type=submit]{
-			background-color: #E8CA61;;
-			color: white;
-			width: 100px;
-			padding: 10px;
-			border: none;
-		}
-
-		#login-form input[type=submit]:hover{
-			background-color: rgb(255, 59, 45);
-			cursor: pointer;
-		}
-
-		#login-form p a{
-			text-decoration: none;
-			font-family: Arial Narrow;
-			font-size: 0.8em;
-			text-align: center;
-		}
-
-		#login-form a:hover{
-			font-style: italic;
-			color: red;
-		}
-
-     </style>
+</style>
 </head>
 <body>
+
+     <nav>
+          <a href="./index.html"><img src="../../../media/logo/colorlogo.svg" alt="" height="63"></a>
+          <input type="text" placeholder="Search" class="search-bar">
+          <div class="account">
+            <h4>Sierraa Ferguson</h4>
+            <p>s.ferguson@gmail.com</p>
+          </div>
+        </nav>
+        <br>
+        
      <fieldset>
      <h1>Admin Login</h1>
      <div id="login-form">
@@ -79,6 +30,7 @@
                <p><input type="submit" name="loginbtn" value="LOGIN"></p>
           </form>
      </div> 
+          <button type="button" id="btn">Forget Password?</button>
      </fieldset>
 </body>
 </html>
