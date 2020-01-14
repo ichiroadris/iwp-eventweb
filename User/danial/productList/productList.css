@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+#box1 {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.hujan-img {
+  float: left;
+  margin: 10;
+  width: 160px;
+  height: 140px;
+}
+.masdo-img {
+  float: left;
+  margin: 10px;
+  width: 160px;
+  height: 140px;
+}
+.iqbal-img {
+  float: left;
+  margin: 10px;
+  width: 160px;
+  height: 140px;
+}
