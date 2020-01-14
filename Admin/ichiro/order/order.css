@@ -5,22 +5,14 @@
   border: 0;
 }
 
-@import url("https://rsms.me/inter/inter.css");
-html {
-  font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-
 nav {
-  display: flex;
-  justify-content: space-between;
   padding: 10px 17px;
   background-color: #1c2260;
   color: white;
+}
+
+nav div {
+  display: inline-block;
 }
 
 body {
@@ -37,7 +29,8 @@ body {
   padding-left: 20px;
   border: none;
   margin-top: 8px;
-  margin-right: 16px;
+  margin-right: 10px;
+  margin-left: 15px;
   font-size: 15px;
   color: white;
 }
@@ -47,12 +40,16 @@ body {
 }
 
 .account {
-  padding-top: 15px;
+  margin-top: 8px;
+  margin-left: 15px;
+  width: 15%;
 }
 
 .sidebar {
-  border-right: 1px solid grey;
-  flex-basis: 14%;
+  border-right: var(
+    --p-override-none,
+    0.1rem solid var(--p-border-subdued, #dfe3e8)
+  );
   padding-top: 10px;
   height: 100vh;
 }
@@ -81,6 +78,7 @@ body {
   text-decoration: none;
   font-size: 15px;
   margin-top: 2px;
+  color: black;
 }
 
 .side-flex {
@@ -100,4 +98,9 @@ main {
   flex-basis: 86%;
   padding: 10px 30px;
   color: #212b36;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
 }
