@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-     <title>Admin Login</title>
+  <title>Admin Login</title>
 
-     <link rel="stylesheet" href="login.css">
-	 <style>
-		 
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-</style>
+  <style>
+
+
+  </style>
 </head>
+
 <body>
 
-     <nav>
-          <a href="./index.html"><img src="../../../media/logo/colorlogo.svg" alt="" height="63"></a>
-          <input type="text" placeholder="Search" class="search-bar">
-          <div class="account">
-            <h4>Sierraa Ferguson</h4>
-            <p>s.ferguson@gmail.com</p>
-          </div>
-        </nav>
-        <br>
-        
-     <fieldset>
-     <h1>Admin Login</h1>
-     <div id="login-form">
-          <form name="loginfrm">
-               <p><input type="email" name="admin_email" placeholder="Email"/></p>
-               <p><input type="password" name="admin_password" placeholder="Password"/></p>
-               <p><input type="submit" name="loginbtn" value="LOGIN"></p>
-          </form>
-     </div> 
-          <button type="button" id="btn">Forget Password?</button>
-     </fieldset>
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search">
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">Search</button>
+        </li>
+      </ul>
+
+    </form>
+  </nav>
+
+  <div>
+    <div style="background-color: #1c2260; height: 300px; color: white;" class="pt-4 d-flex justify-content-center">
+      <br>
+      <div class="">
+        <h1>Welcome!</h1>
+        <p class="ml-auto">Login to save and register your tickets more faster!</p>
+      </div>
+      <span style="background-image: url(../../../asset/seperator.svg);">
+
+    </div>
+  </div>
+
+  <div>
+    <fieldset>
+      <h1>Admin Login</h1>
+      <div id="login-form">
+        <form name="loginfrm">
+          <p><input type="email" name="admin_email" placeholder="Email" /></p>
+          <p><input type="password" name="admin_password" placeholder="Password" /></p>
+          <p><input type="submit" name="loginbtn" value="LOGIN"></p>
+        </form>
+      </div>
+      <button type="button" id="btn">Forget Password?</button>
+    </fieldset>
+  </div>
+  </div>
+
+
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </html>
