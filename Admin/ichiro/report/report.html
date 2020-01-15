@@ -9,41 +9,64 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
+
   <title>GetTicket | Get the best ticket for all events</title>
+
 </head>
 
-<body>
-  <nav class="d-flex justify-content-between w-100">
-    <a href="../../../index.html"><img src="../../../media/logo/colorlogo.svg" alt="" height="63"></a>
-    <input type="text" placeholder="Search" class="search-bar">
-    <div class="account">
-      <h6>Sierraa Ferguson</h6>
-      <p>s.ferguson@live.com</p>
-    </div>
+<body class="bg-light">
+  <nav class="navbar navbar-dark  flex-md-nowrap p-0 " style="background-color:#1c2260;">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 mb-2" href="#"><img src="../../../media/logo/colorlogo.svg" alt=""
+        height="63"></a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search admin" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+
+    </ul>
   </nav>
 
   <div class="main-sect">
-    <div class="sidebar  col-md-2 d-none d-md-block">
-      <div class="side-flex"><img src="../media/home.png" alt=""><a href="">Home</a></div>
-      <div class="side-flex"><img src="../media/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
+    <div class="sidebar" style="width: 15%;">
+      <div class="d-flex"><img src="../media/home.png" alt=""><a href="">Home</a></div>
+      <div class="d-flex"><img src="../media/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
       </div>
-      <div class="side-flex"><img src="../media/member.png" alt=""><a href="">Member</a></div>
-      <div class="side-flex"><img src="../media/icons8-opened-folder-100.png" alt=""><a href="">Category</a></div>
-      <div class="side-flex"><img src="../media/product.png" alt=""><a href="">Product</a></div>
-      <div class="side-flex"><img src="../media/order.png" alt=""><a href="">Order</a></div>
-      <div class="side-flex"><img src="../media/sales.png" alt=""><a href="">Sales</a></div>
+      <div class="d-flex"><img src="../media/member.png" alt=""><a href="">Member</a></div>
+      <div class="d-flex"><img src="../media/icons8-opened-folder-100.png" alt=""><a href="">Category</a></div>
+      <div class="d-flex"><img src="../media/product.png" alt=""><a href="">Product</a></div>
+      <div class="d-flex"><img src="../media/order.png" alt=""><a href="">Order</a></div>
+      <div class="d-flex"><img src="../media/sales.png" alt=""><a href="">Sales</a></div>
     </div>
 
     <main>
       <div class="d-flex justify-content-between">
-        <h1>Report </h1>
-        <button type="button" class="btn btn-primary" style="width: 100px; height: 50px;">Primary</button>
+        <h2>Sales Report</h2>
+        <button type="button" class="btn btn-primary" style="width: 110px; height: 40px;">Print Report</button>
+      </div>
+      <br>
+      <div class="d-flex  justify-content-between">
+        <div class="bg-white w-50 border mr-2 p-2">
+          <h4>Sales</h4>
+          <p>Make business decisions by comparing sales across products, staff, channels, and more</p>
+          <h6 class="font-weight-light">ORDERS LAST 30 DAYS</h6>
 
+        </div>
+        <div class="bg-white w-50 border ml-2 p-2">
+          <h4>Acquisition</h4>
+          <p>Increase visitor engagement by knowing where your visitors are coming from and measuring the success of
+            your campaigns</p>
+          <h6 class="font-weight-light">ORDERS LAST 30 DAYS</h6>
+
+
+        </div>
       </div>
     </main>
   </div>
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"

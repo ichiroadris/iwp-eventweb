@@ -64,13 +64,13 @@ body {
   margin: 2px;
 }
 
-.sidebar div:nth-child(5) {
+.sidebar div:nth-child(6) {
   background-color: rgb(164, 173, 254, 44%);
   border-radius: 10px;
   margin: 4px 3px;
 }
 
-.sidebar div:nth-child(5) a {
+.sidebar div:nth-child(6) a {
   color: #202e78;
 }
 
