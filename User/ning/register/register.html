@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="register.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-lg p-0 "
+      style="background-color: #1c2260;"
+    >
+      <a class="navbar-brand pl-2" href="#"
+        ><img src="/iwp-eventweb/media/logo/colorlogo.svg" width="130" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <form class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="# ">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li>
+            <input
+              class="form-control mr-sm-2  "
+              type="search"
+              placeholder="Search events"
+              aria-label="Search"
+            />
+          </li>
+          <li>
+            <button
+              class="btn btn-outline-success  my-sm-0 ml-3 mr-3"
+              type="submit"
+            >
+              Search
+            </button>
+          </li>
+        </ul>
+      </form>
+    </nav>
+
+    <div class="d-flex flex-row flex-fill">
+      <img src="./assets/register.jpg" alt="" />
+
+      <div class="container__child signup__form">
+        <form action="#" class="d-flex flex-column">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              class="form-control"
+              type="text"
+              name="username"
+              id="username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              type="text"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="passwordRepeat">Repeat Password</label>
+            <input
+              class="form-control"
+              type="password"
+              name="passwordRepeat"
+              id="passwordRepeat"
+              required
+            />
+          </div>
+          <div class="m-t-lg">
+            <ul class="list-inline">
+              <li>
+                <input class="btn btn-dark" type="submit" value="Register" />
+              </li>
+              <li>
+                <a class="signup__link" href="#">I am already a member</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
