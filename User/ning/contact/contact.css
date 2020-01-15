@@ -16,26 +16,6 @@ li {
   list-style-type: none;
 }
 
-.info {
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  font-size: 2.5em;
-}
-
-.info li {
-  padding: 0.2em;
-  border-radius: 100px;
-  box-shadow: 0 8px 6px -2px black;
-  background-color: #f49d6e;
-  transition: all 0.5s;
-  width: 15em;
-}
-
-.info li:hover {
-  transform: scale(1.2);
-}
-
 hr {
   font-family: monospace;
   margin-top: 3em;
@@ -49,6 +29,13 @@ hr {
   );
 }
 
+.info {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+
 .socialMedia {
   width: 40px;
 }
@@ -56,4 +43,17 @@ hr {
 .social {
   display: flex;
   justify-content: center;
+}
+
+.info li {
+  padding: 0.2em;
+  border-radius: 100px;
+  box-shadow: 0 8px 6px -2px black;
+  background-color: #f49d6e;
+  transition: all 0.5s;
+  width: 15em;
+}
+
+.info li:hover {
+  transform: scale(1.2);
 }

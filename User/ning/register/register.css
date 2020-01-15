@@ -9,8 +9,10 @@ body {
   background: #e9e9e9;
 }
 
-.d-flex img {
-  width: 50%;
+label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #ccc;
 }
 
 .container__child {
@@ -22,11 +24,7 @@ body {
   padding: 2.5rem;
   background: #fafafa;
 }
-label {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: #ccc;
-}
+
 .form-control {
   background-color: transparent;
   border-top: 0;
@@ -42,11 +40,15 @@ label {
   color: #999;
 }
 
+.form-group {
+  margin: 5% 0;
+}
+
 .signup__form form {
   height: 70%;
   margin-top: 50%;
 }
 
-.form-group {
-  margin: 5% 0;
+.d-flex img {
+  width: 50%;
 }

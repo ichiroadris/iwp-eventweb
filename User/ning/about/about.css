@@ -28,11 +28,6 @@ nav {
   color: white;
 }
 
-::placeholder {
-  color: white;
-  /* padding-left: 20px */
-}
-
 .account {
   padding-top: 15px;
 }
@@ -66,25 +61,8 @@ nav {
   align-items: center;
 }
 
-.box p {
-  color: white;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: white;
-  width: 40%;
-  text-align: center;
-}
-
 .box {
   padding: 0;
-}
-
-#icon {
-  background-color: #f5d6ba;
-}
-
-.box div p {
-  margin: 0;
 }
 
 .hr {
@@ -105,4 +83,26 @@ nav {
 .social {
   display: flex;
   justify-content: center;
+}
+
+::placeholder {
+  color: white;
+  /* padding-left: 20px */
+}
+
+.box p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  width: 40%;
+  text-align: center;
+}
+
+.box div p {
+  margin: 0;
+}
+
+#icon {
+  background-color: #f5d6ba;
 }
