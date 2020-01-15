@@ -5,44 +5,8 @@
   border: 0;
 }
 
-nav {
-  padding: 10px 17px;
-  background-color: #1c2260;
-  color: white;
-}
-
-nav div {
-  display: inline-block;
-}
-
 body {
   background-color: #f4f6f8;
-}
-
-.search-bar {
-  width: 1000px;
-  height: 50px;
-  background-color: rgb(196, 196, 196, 41%);
-  border-radius: 10px;
-  outline-style: none;
-  padding: 6px;
-  padding-left: 20px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 10px;
-  margin-left: 15px;
-  font-size: 15px;
-  color: white;
-}
-
-::placeholder {
-  color: white;
-}
-
-.account {
-  margin-top: 8px;
-  margin-left: 15px;
-  width: 15%;
 }
 
 .sidebar {
