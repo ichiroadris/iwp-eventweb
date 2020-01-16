@@ -5,69 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>Check</title>
-  <style>
-    canvas {
-      border: 1px solid red;
-    }
-  </style>
+
+
+
+  <title>GetTicket | Get the best ticket for all events</title>
+
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark pt-0" style="background-color: #1c2260;;">
-    <a class="navbar-brand" href="#">
-      <img src="./media/logo/colorlogo.svg" width="120" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<body class="bg-light">
+  <nav class="navbar navbar-dark  flex-md-nowrap p-0 " style="background-color:#1c2260;">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 mb-2" href="#"><img src="../../../media/logo/colorlogo.svg" alt=""
+        height="63"></a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search admin" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
 
-    <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+    </ul>
   </nav>
-  <canvas id="myChart" style="width: 912px; height: 256px"></canvas>
-  <br>
-  <div class="d-flex justify-content-between px-5">
-    <h1>Category</h1>
-    <div class="d-flex justify-content-around">
-      <button type="button" class="btn btn-primary ml-3" style="width: 150px; height:50px">click me</button>
-      <button type="button" class="btn btn-primary ml-3" style="width: 150px; height:50px">click me</button>
-      <button type="button" class="btn btn-primary ml-3" style="width: 150px; height:50px">click me</button>
+
+  <div class="main-sect">
+    <div class="sidebar" style="width: 15%;">
+      <div class="d-flex"><img src="../../../media/sidebar/home.png" alt=""><a href="">Home</a></div>
+      <div class="d-flex"><img src="../../../media/sidebar/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
+      </div>
+      <div class="d-flex"><img src="../../../media/sidebar/member.png" alt=""><a href="">Member</a></div>
+      <div class="d-flex"><img src="../../../media/sidebar/icons8-opened-folder-100.png" alt=""><a href="">Category</a>
+      </div>
+      <div class="d-flex"><img src="../../../media/sidebar/product.png" alt=""><a href="">Product</a></div>
+      <div class="d-flex"><img src="../../../media/sidebar/order.png" alt=""><a href="">Order</a></div>
+      <div class="d-flex"><img src="../../../media/sidebar/sales.png" alt=""><a href="">Sales</a></div>
     </div>
 
+    <main>
+      <h2>Dashboard</h2>
+      <div></div>
+    </main>
   </div>
 
 </body>
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -76,7 +57,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script src="./script.js"></script>
+<script src="script.js"></script>
 
 
 
