@@ -24,3 +24,5 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+
+$("#myAudio").prop("volume", 0.1);

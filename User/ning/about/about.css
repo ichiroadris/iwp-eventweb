@@ -103,6 +103,22 @@ nav {
   margin: 0;
 }
 
+.card-text {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.card {
+  border: 2px solid black;
+  width: 20%;
+  box-shadow: 10px 10px 20px -5px rgba(0, 0, 0, 0.42);
+}
+
 #icon {
   background-color: #f5d6ba;
+}
+
+#team-info {
+  margin: 5em 0;
 }
