@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">    
+    
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+        
+
+    </head>
+
+    <nav class="navbar navbar-dark  flex-md-nowrap p-0 " style="background-color:#1c2260;">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0 mb-2" href="#"><img src="../../../media/logo/colorlogo.svg" alt=""
+            height="63"></a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search admin" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+    
+        </ul>
+      </nav>
+    
+      <div class="main-sect">
+        <div class="sidebar" style="width: 15%;">
+          <div class="d-flex"><img src="../../../media/home.png" alt=""><a href="">Home</a></div>
+          <div class="d-flex"><img src="../../../media/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
+          </div>
+          <div class="d-flex"><img src="../../../media/member.png" alt=""><a href="">Member</a></div>
+          <div class="d-flex"><img src="../../../media/icons8-opened-folder-100.png" alt=""><a href="">Category</a></div>
+          <div class="d-flex"><img src="../../../media/product.png" alt=""><a href="">Product</a></div>
+          <div class="d-flex"><img src="../../../media/order.png" alt=""><a href="">Order</a></div>
+          <div class="d-flex"><img src="../../../media/sales.png" alt=""><a href="">Sales</a></div>
+        </div>
+    
+    
+<div class="card w-40">
+    <div class="card-body">
+    <h5>8 out of 10 tasks to be completed </h5>
+    <div class="progress md-progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="10"></div>
+    </div>
+        <br>
+        <h3>23 December, Sunday</h3>
+            <div class="col-md-12 my-auto">
+                <div class="card-hover-shadow-2x mb-3 card">
+                    <div class="card-header-tab card-header">
+                        <div class="card-header-title font-size-lg text-capitalize font-weight-normal"><i class="fa fa-tasks"></i>&nbsp;Task Lists</div>
+                    </div>
+                        <perfect-scrollbar class="ps-show-limits">
+                            <div style="position: static;" class="ps ps--active-y">
+                                <div class="ps-content">
+                                    <ul class=" list-group list-group-flush ">
+                                        <li class="list-group-item col-md-12">
+                                            <div class="todo-indicator bg-warning"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"> <input class="custom-control-input" id="exampleCustomCheckbox12" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox12">&nbsp;</label> </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Call Sam For payments <div class="badge badge-danger ml-2">Rejected</div>
+                                                        </div>
+                                                        <div class="widget-subheading"><i>By Bob</i></div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="todo-indicator bg-focus"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox1" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox1">&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Make payment to Bluedart</div>
+                                                        <div class="widget-subheading">
+                                                            <div>By Johnny <div class="badge badge-pill badge-info ml-2">NEW</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="todo-indicator bg-primary"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox4">&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="widget-content-left flex2">
+                                                        <div class="widget-heading">Office rent </div>
+                                                        <div class="widget-subheading">By Samino!</div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="todo-indicator bg-info"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox2">&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Office grocery shopping</div>
+                                                        <div class="widget-subheading">By Tida</div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="todo-indicator bg-success"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox3">&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="widget-content-left flex2">
+                                                        <div class="widget-heading">Ask for Lunch to Clients</div>
+                                                        <div class="widget-subheading">By Office Admin</div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="todo-indicator bg-success"></div>
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-2">
+                                                        <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10" type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+                                                    </div>
+                                                    <div class="widget-content-left flex2">
+                                                        <div class="widget-heading">Client Meeting at 11 AM</div>
+                                                        <div class="widget-subheading">By CEO</div>
+                                                    </div>
+                                                    <div class="widget-content-right"> <button class="border-0 btn-transition btn btn-outline-success"> <i class="fa fa-check"></i></button> <button class="border-0 btn-transition btn btn-outline-danger"> <i class="fa fa-trash"></i> </button> </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </perfect-scrollbar>
+                    
+                    <div class="d-block text-right card-footer"><button class="mr-2 btn btn-link btn-sm">Cancel</button><button class="btn btn-primary">Add Task</button></div>
+                </div>
+            </div>
+    </div>
+        
+</div>
+
+<div class="card w-40">
+    <div class="card-body" style = "position: relative;">
+    <div class="d-flex p-2 bd-highlight flex-column">
+        <div class="p-2 bd-highlight">
+            <h3>Deals</h3>
+            <canvas id="myChart" width="300" height="300"></canvas>
+        </div>
+        <div class="p-2 bd-highlight">
+            <h3>Tasks</h3>
+            <canvas id="myDoughnutChart"width ="300"  height ="300"></canvas>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="card w-40">
+    <div class="card-body">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+            <h3>Recent Monthly Sales</h3>
+            <canvas id="myBarChart" width="400" height="400"></canvas>  
+            <div class="container">
+                <div class="row">
+                    <div class="four col-md-4">
+                        <div class="counter-box colored"> <i class="fa fa-thumbs-o-up"></i> <span class="counter">2147</span>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                <div class="four col-md-4">
+                    <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">3275</span>
+                        <p>Registered Members</p>
+                    </div>
+                </div>
+                <div class="four col-md-4">
+                    <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter">289</span>
+                        <p>Available Events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>      
+               
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+    labels: ['1 Dec', '10 Dec', '15 Dec', '20 Dec', '25 Dec', '31 Dec'],
+    datasets: [{
+        label: 'Deals',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1,
+        backgroundColor: 'rgba(137, 196, 244, 1)'
+    }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }   
+    });
+    var ctc = document.getElementById('myDoughnutChart').getContext('2d');
+    var myDoughnutChart = new Chart(ctc, {
+    type: 'doughnut',
+    data: {
+    labels: ['Active', 'Completed', 'Ended'],
+    datasets: [{
+        label: 'Tasks',
+        data: [24, 10, 5],
+        borderWidth: 1,
+        backgroundColor: 
+        ['rgba(137, 196, 244, 1)',
+        'rgba(41, 241, 195, 1)',
+        'rgba(240, 52, 52, 1)']
+
+    }]
+    },
+    });
+    var cta = document.getElementById('myBarChart').getContext('2d');
+    var myBarChart = new Chart(cta, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
+        datasets: [{
+            label: '# of Sales',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+    $(document).ready(function() {
+
+    $('.counter').each(function () {
+    $(this).prop('Counter',0).animate({
+    Counter: $(this).text()
+    }, {
+    duration: 4000,
+    easing: 'swing',
+    step: function (now) {
+    $(this).text(Math.ceil(now));
+    }
+    });
+    });
+
+    });
+
+</script>
+</html>
+
