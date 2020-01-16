@@ -90,7 +90,7 @@ hr {
   justify-content: center;
 }
 
-.carousel-item img {
+.carousel-item video {
   max-height: 100%;
   width: 100%;
   filter: brightness(40%);
