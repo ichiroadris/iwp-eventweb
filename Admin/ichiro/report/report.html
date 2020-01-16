@@ -9,47 +9,104 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
+
   <title>GetTicket | Get the best ticket for all events</title>
+
 </head>
 
-<body>
-  <nav class="d-flex justify-content-between w-100">
-    <a href="../../../index.html"><img src="../../../media/logo/colorlogo.svg" alt="" height="63"></a>
-    <input type="text" placeholder="Search" class="search-bar">
-    <div class="account">
-      <h6>Sierraa Ferguson</h6>
-      <p>s.ferguson@live.com</p>
-    </div>
+<body class="bg-light">
+  <nav class="navbar navbar-dark  flex-md-nowrap p-0 " style="background-color:#1c2260;">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 mb-2" href="#"><img src="../../../media/logo/colorlogo.svg" alt=""
+        height="63"></a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search admin" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+
+    </ul>
   </nav>
 
   <div class="main-sect">
-    <div class="sidebar  col-md-2 d-none d-md-block">
-      <div class="side-flex"><img src="../media/home.png" alt=""><a href="">Home</a></div>
-      <div class="side-flex"><img src="../media/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
+    <div class="sidebar" style="width: 15%;">
+      <div class="d-flex"><img src="../media/home.png" alt=""><a href="">Home</a></div>
+      <div class="d-flex"><img src="../media/icons8-name-tag-100.png" alt=""><a href="">Staff</a>
       </div>
-      <div class="side-flex"><img src="../media/member.png" alt=""><a href="">Member</a></div>
-      <div class="side-flex"><img src="../media/icons8-opened-folder-100.png" alt=""><a href="">Category</a></div>
-      <div class="side-flex"><img src="../media/product.png" alt=""><a href="">Product</a></div>
-      <div class="side-flex"><img src="../media/order.png" alt=""><a href="">Order</a></div>
-      <div class="side-flex"><img src="../media/sales.png" alt=""><a href="">Sales</a></div>
+      <div class="d-flex"><img src="../media/member.png" alt=""><a href="">Member</a></div>
+      <div class="d-flex"><img src="../media/icons8-opened-folder-100.png" alt=""><a href="">Category</a></div>
+      <div class="d-flex"><img src="../media/product.png" alt=""><a href="">Product</a></div>
+      <div class="d-flex"><img src="../media/order.png" alt=""><a href="">Order</a></div>
+      <div class="d-flex"><img src="../media/sales.png" alt=""><a href="">Sales</a></div>
     </div>
 
     <main>
-      <div class="d-flex justify-content-between">
-        <h1>Report </h1>
-        <button type="button" class="btn btn-primary" style="width: 100px; height: 50px;">Primary</button>
+      <div class="d-flex justify-content-between mt-1">
+        <h2>Sales Report</h2>
+        <button type="button" class="btn btn-primary" style="width: 110px; height: 40px;">Print Report</button>
+      </div>
+      <br>
+      <div class="d-flex  justify-content-between mb-3">
+        <div class="bg-white w-50 border mr-2 p-3 rounded">
+          <h4>Sales</h4>
+          <p>Make business decisions by comparing sales across products, staff, channels, and more</p>
+          <span class="font-weight-light">ORDERS LAST 30 DAYS</span>
+          <div class="d-flex justify-content-around align-items-center">
+            <h2>Total: 32</h2>
+            <canvas id="sales"></canvas>
+          </div>
+          <hr>
+          <h6 class="pl-2">REPORTS</h6>
+          <div class="d-flex justify-content-between px-2 border-bottom  pt-2">
+            <p class=" text-primary">Sales over time</p>
+            <p class="font-weight-light d-inline"> 15 Orders</p>
+          </div>
+          <div class="d-flex justify-content-between px-2 border-bottom pt-2">
+            <p class=" text-primary">Sales by product</p>
+            <p class="font-weight-light d-inline">17 Orders</p>
+          </div>
+        </div>
+        <div class="bg-white w-50 border ml-2 p-3 rounded">
+          <h4>Acquisition</h4>
+          <p>Increase visitor engagement by knowing where your visitors are coming from and measuring the success of
+            your campaigns</p>
+          <span class="font-weight-light">ORDERS LAST 30 DAYS</span>
+          <div class="d-flex justify-content-around align-items-center">
+            <h2>Total: 88</h2>
+            <canvas id="acquire"></canvas>
+          </div>
+          <hr>
+          <h6 class="pl-2">REPORTS</h6>
+          <div class="d-flex justify-content-between px-2 border-bottom pt-2 ">
+            <p class=" text-primary">Sales over time</p>
+            <p class="font-weight-light d-inline"> 15 Orders</p>
+          </div>
+          <div class="d-flex justify-content-between px-2 border-bottom pt-2">
+            <p class=" text-primary">Sales by product</p>
+            <p class="font-weight-light d-inline">17 Orders</p>
+          </div>
 
+
+        </div>
+      </div>
+      <div>
+        <h2>Daily Sales</h2>
+        <input type="date" name="salesdate" id="datepicker" class="border rounded">
       </div>
     </main>
   </div>
 
 </body>
+<script src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="report.js"></script>
 
 
 
