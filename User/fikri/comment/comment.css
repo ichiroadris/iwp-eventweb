@@ -1,199 +1,72 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 17px;
-  background-color: #1c2260;
-  color: white;
-}
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f4f6f8;
-}
-
-.search-bar {
-  width: 1000px;
-  height: 50px;
-  background-color: rgb(196, 196, 196, 41%);
-  border-radius: 10px;
-  outline-style: none;
-  padding: 6px;
-  padding-left: 20px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 15px;
-  color: white;
-}
-
-::placeholder {
-  color: white;
-}
-
-h1{
-    text-align: center;
-    margin: 20px 300px 0px 0px;
-}
-
-h2{
-    float: right;
-    position: relative;
-    bottom: 500px;
-    right: 80px;
-    color: blue;
-}
-
-.title{
-    font-weight: bold;
-    font-size: 14pt;
-    padding: 20px;
-    font-style: italic;
-}
-
-fieldset{
-    height: 650px;
-    width: 650px;
-    margin: auto;
-    border-radius: 10px;
-    border-style: ridge;
-    background-color: #EEF4ED;
-}
-
-
-#image{
-    height: 200px;
-    width: 250px;
-    padding: 20px 20px 0px 20px;
-}
-
-#eventdate{
-    border-radius: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.line {
-  height:2px;
-  width:100%;
-  margin-top:10px;
-  margin-bottom:20px;
-  background:#ddd;
-}
-
-.c1{
-    padding-left: 50px;
-    font-size: 16pt;
-    font-family: Verdana;
-}
-
-#post{
-  border-radius: 15px;
-  width: 100px;
-  height: 30px;
-  position: relative;
-  left: 50px;
-  top: 50px;
-  background-color: #ACC3A6;
-  font-size: 14pt;
-  font-weight: bold;
-  font-family: 'Trebuchet MS';
-}
-
-#post:hover{
-  cursor: pointer;
-  background: rgb(148, 147, 147);
-}
-
-.goback{
-  position: relative;
-  left: 500px;
-  top: 35px;
-}
-
-#btn{
-  background-color: #EEF4ED;
-  border: none;
-}
-
-#btn:hover{
-  cursor: pointer;
-  background: rgb(204, 203, 203);
-}
-
-
-
-
-
-/*star rating*/
-
 .rating {
-    float: right;
-    position: relative;
-    bottom: 450px;
-    left: 90px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 40px;
-  }
-  
-  .rating label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .rating label:last-child {
-    position: static;
-  }
-  
-  .rating label:nth-child(1) {
-    z-index: 5;
-  }
-  
-  .rating label:nth-child(2) {
-    z-index: 4;
-  }
-  
-  .rating label:nth-child(3) {
-    z-index: 3;
-  }
-  
-  .rating label:nth-child(4) {
-    z-index: 2;
-  }
-  
-  .rating label:nth-child(5) {
-    z-index: 1;
-  }
-  
-  .rating label input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  
-  .rating label .icon {
-    float: left;
-    color: transparent;
-  }
-  
-  .rating label:last-child .icon {
-    color: #000;
-  }
-  
-  .rating:not(:hover) label input:checked ~ .icon,
-  .rating:hover label:hover input ~ .icon {
-    color: rgb(255, 230, 0);
-  }
-  
-  .rating label input:focus:not(:checked) ~ .icon:last-child {
-    color: #000;
-    text-shadow: 0 0 5px #09f;
-  }
+  float: right;
+  position: relative;
+  bottom: 450px;
+  left: 90px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 40px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: rgb(255, 230, 0);
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}

@@ -1,22 +1,28 @@
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'line',
+$(document).ready(function () {
+  // Activate Carousel
+  $("#myCarousel").carousel();
 
-  // The data for our dataset
-  data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45]
-    }]
-  },
+  // Enable Carousel Indicators
+  $(".item1").click(function () {
+    $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function () {
+    $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function () {
+    $("#myCarousel").carousel(2);
+  });
 
-  // Configuration options go here
-  options: {
-    responsive: false,
-
-  }
+  // Enable Carousel Controls
+  $(".carousel-control-prev").click(function () {
+    $("#myCarousel").carousel("prev");
+  });
+  $(".carousel-control-next").click(function () {
+    $("#myCarousel").carousel("next");
+  });
+  $("a[class^=carousel-control-]").click(function (event) {
+    event.preventDefault();
+  });
 });
+
+$("#myAudio").prop("volume", 0.1);

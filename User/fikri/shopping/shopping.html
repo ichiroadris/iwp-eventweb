@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Shopping Bag</title>
-    <link rel="stylesheet" type="text/css" href="shopping.css">
-</head>
-<body>
-    <nav>
-        <a href="./index.html"><img src="../../media/logo/colorlogo.svg" height="63"></a>
-        <input type="text" placeholder="Search" class="search-bar">
-        <div class="account">
-          <h4>Sierraa Ferguson</h4>
-          <p>s.ferguson@gmail.com</p>
-        </div>
-      </nav>
-      <br>
-    <fieldset class="container">
-            <h1>Shopping Bag</h1>
-            <div class="line"></div>
-            <table id="shoptable">
-                <tr>
-                    <td rowspan="2"><img src="../../image/Hujan.jpg" class='full-width'></img>
-                    </td>
-                    <td rowspan="2">
-                    <span class="event">Hujan Live on Stage </span>
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 January 2020
-                    </td>
-                    <td rowspan="2"><span class="pricethin">RM50</span> </td>
-                    <td rowspan="2"><input type="number" name="amount" id="quantity" value="1" min="1" max="10"></td>
-                    <td><span class="pricebold">RM50</span></td>
-                    <br><br>
-                    <td><button class="remove"><img src="../../image/trash-can.png"></button></td>
-                </tr>
-            </table> 
-            <div class="line"></div>
-            <table id="shoptable">
-                <tr>
-                    <td rowspan="2"><img src="../../image/iqbalm.jpg" class='full-width'></img>
-                    </td>
-                    <td rowspan="2">
-                    <span class="event">IqbalM Modenrokes </span>
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29 January 2020
-                    </td>
-                    <td rowspan="2"><span class="pricethin">RM40</span> </td>
-                    <td rowspan="2"><input type="number" name="amount" id="quantity" value="2" min="1" max="10"></td>
-                    <td><span class="pricebold">RM80</span></td>
-                    <br><br>
-                    <td><button class="remove"><img src="../../image/trash-can.png"></button></td>
-                </tr>
-            </table> 
-            <div class="line"></div>
-            <table class="total">
-                
-                <tr>
-                    <td><h3>Subtotal</h3></td>
-                    <td><span class="pricethin">RM 130</span></td>
-                </tr>
-                <tr>
-                    <td><h3>Estimated Tax</h3></td>
-                    <td><span class="pricethin">RM 7.80</span></td>
-                    
-                </tr>
-                <td><div class="line"></div></td>   
-                <tr> 
-                   <td><span id="totalprice">Total</span></td>
-                   <td><span id="totalprice">RM 137.80</span></td>
-               </tr>
-            </table>
-            <table class="end">
-                <tr>
-                    <td><button id="btn">Continue Shopping</button> | </td>
-                    <td><button id="btn">Save Bag</button></td>
-                    <td><button id="proceed">Proceed to Checkout</button></td>
-                </tr>
-            </table>
 
-    </fieldset>
+<head>
+  <title>Shopping Bag</title>
+  <link rel="stylesheet" type="text/css" href="shopping.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-3" href="# ">Account</a>
+        </li>
+
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search" />
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">
+            Search
+          </button>
+        </li>
+      </ul>
+    </form>
+  </nav>
+  <br>
+  <fieldset class="container">
+    <h1>Shopping Bag</h1>
+    <div class="line"></div>
+    <table id="shoptable">
+      <tr>
+        <td rowspan="2"><img src="../../../media/images/Hujan10-003-1024x681.jpg" width="400px" class='full-width'>
+        </td>
+        <td rowspan="2">
+          <span class="event">Hujan Live on Stage </span>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 January 2020
+        </td>
+        <td rowspan="2"><span class="pricethin">RM50</span> </td>
+        <td rowspan="2"><input type="number" name="amount" id="quantity" value="1" min="1" max="10"></td>
+        <td><span class="pricebold">RM50</span></td>
+        <br><br>
+        <td><button class="remove"><img
+              src="../../../media/images/Bin_bin_delete_trashcan_garbage_dust-512.png"></button></td>
+      </tr>
+    </table>
+    <div class="line"></div>
+    <table id="shoptable">
+      <tr>
+        <td rowspan="2"><img src="../../../media/images/iqbal.jpg" class='full-width'></img>
+        </td>
+        <td rowspan="2">
+          <span class="event">IqbalM Modenrokes </span>
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29 January 2020
+        </td>
+        <td rowspan="2"><span class="pricethin">RM40</span> </td>
+        <td rowspan="2"><input type="number" name="amount" id="quantity" value="2" min="1" max="10"></td>
+        <td><span class="pricebold">RM80</span></td>
+        <br><br>
+        <td><button class="remove"><img
+              src="../../../media/images/Bin_bin_delete_trashcan_garbage_dust-512.png"></button></td>
+      </tr>
+    </table>
+    <div class="line"></div>
+    <table class="total">
+
+      <tr>
+        <td>
+          <h3>Subtotal</h3>
+        </td>
+        <td><span class="pricethin">RM 130</span></td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Estimated Tax</h3>
+        </td>
+        <td><span class="pricethin">RM 7.80</span></td>
+
+      </tr>
+      <td>
+        <div class="line"></div>
+      </td>
+      <tr>
+        <td><span id="totalprice">Total</span></td>
+        <td><span id="totalprice">RM 137.80</span></td>
+      </tr>
+    </table>
+    <table class="end">
+      <tr>
+        <td><button id="btn">Continue Shopping</button> | </td>
+        <td><button id="btn">Save Bag</button></td>
+        <td><button id="proceed">Proceed to Checkout</button></td>
+      </tr>
+    </table>
+
+  </fieldset>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </html>

@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Comments</title>
-    <link rel="stylesheet" type="text/css" href="comment.css">
+  <title>Comments</title>
+  <link rel="stylesheet" type="text/css" href="comment.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
-<body>
-  <nav>
-    <a href="./index.html"><img src="../../../media/logo/colorlogo.svg" height="63"></a>
-    <input type="text" placeholder="Search" class="search-bar">
-    <div class="account">
-      <h4>Sierraa Ferguson</h4>
-      <p>s.ferguson@gmail.com</p>
-    </div>
+
+<body class="bg-light">
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-3" href="# ">Account</a>
+        </li>
+
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search" />
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">
+            Search
+          </button>
+        </li>
+      </ul>
+    </form>
   </nav>
-  <br>
-    <h1>Comments and Ratings</h1>
-    <br>
-    <fieldset>
-        <form name="frm">
-            <img src="../../../image/Hujan.jpg" id="image"><br>
-            <span class="title">Hujan Live on Stage</span>
+  <main class="p-3">
+    <div>
+      <h2>Comment and Ratings</h2>
+    </div>
+    <hr>
+    <div>
+      <div action="" name="comment" class="border p-3 d-flex ">
+        <form name="frm" class="d-flex">
+          <img src="../../../media/images/Hujan10-003-1024x681.jpg" id="image" height="300px" width="500px"><br>
+          <div class="ml-5">
+            <h3 class="title">Hujan Live on Stage</h3>
             <div class="line"></div>
             <div class="c1">
-                <p>Date of Event: </p>
-                <input type="date" id="eventdate">
+              <p>Date of Event: </p>
+              <input type="date" id="eventdate">
             </div>
             <br>
             <div class="c1">
-                <p>Any Comments:</p>
-                <textarea name="comment" cols="50" rows="10"></textarea>
+              <p>Any Comments:</p>
+              <textarea name="comment" cols="50" rows="10"></textarea>
             </div>
-            <input type="submit" id="post" value="POST">
-            <div class="goback">
-              <button type="button" id="btn">Cancel</button>
-              | <button type="button" id="btn">Back</button>
+            <button type="submit" class="btn btn-primary">Post</button>
+            <div class="goback mt-3">
+              <button type="button " id="btn" class="btn btn-primary
+              btn btn-primary">Cancel</button>
+              | <button type="button " id="btn" class="btn btn-primary
+              btn btn-primary">Back</button>
             </div>
         </form>
-        <h2>Overall Ratings?</h2>
-        <form class="rating">
+        <div>
+          <form class="rating ">
+            <h2>Overall Rating:</h2>
             <label>
               <input type="radio" name="stars" value="1" />
               <span class="icon">★</span>
@@ -51,7 +88,7 @@
               <input type="radio" name="stars" value="3" />
               <span class="icon">★</span>
               <span class="icon">★</span>
-              <span class="icon">★</span>   
+              <span class="icon">★</span>
             </label>
             <label>
               <input type="radio" name="stars" value="4" />
@@ -68,10 +105,21 @@
               <span class="icon">★</span>
               <span class="icon">★</span>
             </label>
-            
+
           </form>
-    </fieldset>
-    
+        </div>
+      </div>
+
+    </div>
+
+  </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </html>

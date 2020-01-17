@@ -1,161 +1,124 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 17px;
-  background-color: #1c2260;
-  color: white;
-}
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f4f6f8;
-}
-
-.search-bar {
-  width: 1000px;
-  height: 50px;
-  background-color: rgb(196, 196, 196, 41%);
-  border-radius: 10px;
-  outline-style: none;
-  padding: 6px;
-  padding-left: 20px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 15px;
-  color: white;
-}
-
-::placeholder {
-  color: white;
-}
-
-h1{
+h1 {
   padding-left: 50px;
 }
 
-.container{
-    height: 100%;
-    width: 900px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border: 1px inset gray;
-    border-radius: 20px;
+.container {
+  height: 100%;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border: 1px inset gray;
+  border-radius: 20px;
 }
 
 .line {
-    height:1px;
-    width:100%;
-    margin-top:10px;
-    margin-bottom:20px;
-    background:#ddd;
-  }
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #ddd;
+}
 
-  .event {
-    font-size: 16pt;  
-    font-weight: bold;
-    position: relative;
-    left: 30px;
-  }
-  
-  .full-width {
-    width:200px;
-    height: 200px;
-  }
+.event {
+  font-size: 16pt;
+  font-weight: bold;
+  position: relative;
+  left: 30px;
+}
 
+.full-width {
+  width: 350px;
+  height: 200px;
+}
 
-  #shoptable{
-      width: auto;
-      height: 200px;
-      border-style: none;
-      padding: 10px 10px;
-  }
+#shoptable {
+  width: auto;
+  height: 200px;
+  border-style: none;
+  padding: 10px 10px;
+}
 
-  .pricethin{
-    font-size: 14pt;
-    font-weight: 200;
-    padding-left: 100px;
-    padding-top: auto;
-  }
+.pricethin {
+  font-size: 14pt;
+  font-weight: 200;
+  padding-left: 100px;
+  padding-top: auto;
+}
 
-  .pricebold{
-    font-weight: bold;
-    padding-left: 80px;
-    padding-top: auto;
-  }
+.pricebold {
+  font-weight: bold;
+  padding-left: 80px;
+  padding-top: auto;
+}
 
-  #quantity{
-      margin-left: 100px;
-      width: 40px;
-      border-radius: 5px;
-  }
+#quantity {
+  margin-left: 100px;
+  width: 40px;
+  border-radius: 5px;
+}
 
-  .remove{
-    padding-left: 50px;  
-    border: none;
-    background-color: #f4f6f8;
-  }
+.remove {
+  padding-left: 50px;
+  border: none;
+  background-color: #f4f6f8;
+}
 
-  .remove :hover{
-    cursor: pointer;
-  }
+.remove :hover {
+  cursor: pointer;
+}
 
-  .remove img{
-    width: 20px;
-    height: 20px;
-  }
+.remove img {
+  width: 20px;
+  height: 20px;
+}
 
+.total {
+  float: right;
+  margin: 20px;
+}
 
-  .total {
-    float: right;
-    margin: 20px;
-  }
+#totalprice {
+  font-size: 22pt;
+  font-weight: bold;
+}
 
-  #totalprice{
-    font-size: 22pt;
-    font-weight: bold;
-  }
- 
-  .end{
-    width: auto;
-    position: relative;
-    padding-top: 250px;
-    bottom: 20px;
-    left: 20px;
-  }
+.end {
+  width: auto;
+  position: relative;
+  padding-top: 250px;
+  bottom: 20px;
+  left: 20px;
+}
 
-  #btn{
-    border: none;
-    background-color: white;
-  }
+#btn {
+  border: none;
+  background-color: white;
+}
 
-  #btn:hover{
-    cursor: pointer;
-    background: rgb(170, 169, 169);
-  }
+#btn:hover {
+  cursor: pointer;
+  background: rgb(170, 169, 169);
+}
 
+#proceed {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 14pt;
+  position: relative;
+  bottom: 30px;
+  left: 450px;
+}
 
-  #proceed{
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: blueviolet;
-    color: white;
-    font-size: 14pt;
-    position: relative;
-    bottom: 30px;
-    left: 450px;
-  }
-
-  #proceed:hover{
-    cursor: pointer;
-    background-color: purple;
-  }
-
-  
+#proceed:hover {
+  cursor: pointer;
+  background-color: purple;
+}

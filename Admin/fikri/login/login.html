@@ -13,69 +13,49 @@
 
   </style>
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <body>
 
-  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
-    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-dark   flex-md-nowrap p-0 " style="background-color:#1c2260;">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0 mb-2" href="#"><img src="../../../media/logo/colorlogo.svg" alt=""
+        height="63"></a>
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search admin" aria-label="Search">
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Home</a>
+      </li>
 
-    <form class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="# ">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
-        </li>
-        <li class="nav-item mr-4">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li>
-          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search">
-        </li>
-        <li>
-          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">Search</button>
-        </li>
-      </ul>
-
-    </form>
+    </ul>
   </nav>
 
-  <div>
-    <div style="background-color: #1c2260; height: 300px; color: white;" class="pt-4 d-flex justify-content-center">
-      <br>
-      <div class="">
-        <h1>Welcome!</h1>
-        <p class="ml-auto">Login to save and register your tickets more faster!</p>
-      </div>
-      <span style="background-image: url(../../../asset/seperator.svg);">
 
+  <form class="form-signin-admin ">
+    <div class="text-center mb-4">
+      <img class="mt-5 mb-3 " src="../../../media/logo/colorlogo.svg" alt="" width="250" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Welcome back admin!</h1>
+      <p>For member sign in, please go to <a href="getticket.com/register">getticket.com/signin</a></p>
     </div>
-  </div>
 
-  <div>
-    <fieldset>
-      <h1>Admin Login</h1>
-      <div id="login-form">
-        <form name="loginfrm">
-          <p><input type="email" name="admin_email" placeholder="Email" /></p>
-          <p><input type="password" name="admin_password" placeholder="Password" /></p>
-          <p><input type="submit" name="loginbtn" value="LOGIN"></p>
-        </form>
-      </div>
-      <button type="button" id="btn">Forget Password?</button>
-    </fieldset>
-  </div>
+    <div class="form-label-group">
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputEmail">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+      <label for="inputPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">© 2020</p>
+  </form>
   </div>
 
 
