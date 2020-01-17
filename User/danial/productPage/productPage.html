@@ -2,22 +2,66 @@
 
 <head></head>
 <title>Product Page</title>
-<link rel="stylesheet" href="ProductPage.css">
+<link rel="stylesheet" href="productPage.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 <body>
-  <fieldset style="width: 300px; margin: auto; border: 1px; border-left: 1px solid #000;">
-    <div id="box1">
-      <img class="hujan-img" src="./media/Hujan10-003-1024x681.jpg" />
-      <p style="font-weight: bold; font-size: 40px; font-family: Geeneva;">Hujan Live on Stage</p>
-      <p style="font-family: Arial; color: black">15 January 2020, Wednesday</p>
-      <p style="font-size: 15px; font-style: italic; color: gray;">7.00 pm - 12.00 pm</p>
-      <p style="font-family: Arial; color: black">Dewan Tun Canselor, Multimedia University</p>
-      <p style="font-weight: bold; font-family: Verdana;">RM50.00</p>
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search">
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">Search</button>
+        </li>
+      </ul>
+
+    </form>
+  </nav>
+  <main>
+
+    <div class="bg-light mx-4 border">
+      <div class="d-flex justify-content-around">
+        <img src="../../../media/images/Hujan10-003-1024x681.jpg" alt="" width="600" class="m-4">
+        <div class=" p-4">
+          <h1>Hujan Pelangi & Kau Showcase</h1>
+        </div>
+      </div>
     </div>
-    <div id="box2">
-      <input type="button" value=" Get Ticket >" id="box2">
-    </div>
-  </fieldset>
+
+  </main>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 </html>
