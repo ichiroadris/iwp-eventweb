@@ -1,30 +1,16 @@
-body {
-  text-align: center;
-  margin: auto;
-  padding: 20px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-#box1 {
-  width: 600px;
-  height: 200px;
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
+
+.place {
+  outline: none;
+  border: 0px;
+  text-decoration: underline;
 }
-.hujan-img {
-  float: left;
-  margin: 10;
-  width: 160px;
-  height: 140px;
-}
-.masdo-img {
-  float: left;
-  margin: 10px;
-  width: 160px;
-  height: 140px;
-}
-.iqbal-img {
-  float: left;
-  margin: 10px;
-  width: 160px;
-  height: 140px;
+
+.list-category {
+  width: 30%;
+  list-style-type: none;
 }

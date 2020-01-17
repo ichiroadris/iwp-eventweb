@@ -3,45 +3,232 @@
 <head>
   <title>Product List</title>
   <link rel="stylesheet" href="productList.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <fieldset style="width: 1000px; margin: auto;">
-    <div style="clear:both">
-      <div style="margin: auto" id="box1">8
-        <img class="hujan-img" src="./media/Hujan10-003-1024x681.jpg" />
-        <p style="font-weight: bold; font-size: 30px; font-style: inherit;">Hujan Live on Stage</p>
-        <p style="font-style: italic;">18 January 2020</p>
-        <p style="font-style: oblique;">RM50</p>
-        <p style="font-weight: bold; font-style: italic;  ">Dewan Tun Cancelor, Multimedia University</p>
-      </div>
-      <br />
-      <hr />
-      <br />
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div style="margin: auto" id="box1">
-        <img class="masdo-img" src="./media/Masdo.jpg" />
-        <div>
-          <p style="font-weight: bold; font-size: 30px; font-style: inherit;">Kugiran Masdo Jalan Abbey</p>
-          <p style="font-style: italic;">1 February 2020</p>
-          <p style="font-style: oblique;">Rm40</p>
-          <p style="font-weight: bold; font-style: italic;  ">Auditorium Cempaka Seri</p>
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item mr-4">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search">
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">Search</button>
+        </li>
+      </ul>
+
+    </form>
+  </nav>
+
+  <main class="p-4">
+    <div class="d-flex">
+      <h2>Popular in <input type="text" value="Cyberjaya" class="place font-weight-bold text-primary">
+      </h2>
+    </div>
+    <ul class="d-flex justify-content-between list-category">
+      <a href="">
+        <li class="text-primary ">All</li>
+      </a>
+      <li>For you</li>
+      <li>This Weekend</li>
+      <li>Free</li>
+      <li>Music</li>
+      <li>Charity</li>
+    </ul>
+    <hr>
+
+    <div>
+      <div class="d-flex flex-row justify-content-between">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card1.jfif" alt="Card image cap" />
+          <h3 class="card-header">Viper Urban at KL Tower</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Take to the streets of Kuala Lumpur and discover the best of both
+              worlds, street running and obstacles as Viper Urban makes its
+              debut at the iconic KL Tower on 18th April 2020. See the city in a
+              different light as you take on 6km + 12 Obstacles.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card2.jfif" alt="Card image cap" />
+          <h3 class="card-header">Traders Fair 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Series of Fantastic Financial Traders Fairs and Gala Nights is
+              going to take place in Thailand, Indonesia, Malaysia, Philippines
+              and Singapore attracting the world of traders to one place during
+              in one day. Top speakers are going to make educational speeches in
+              the Fair seminar halls. The Fair program is going to be full of
+              entertainments, magic shows, lucky draws, fantastic prizes, live
+              performances and music.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card3.jpg" alt="Card image cap" />
+          <h3 class="card-header">HUJAN X MPYO</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Malaysia’salternative rock band Hujan has enjoyed a cult following throughout the years.After its smashing
+              DFP debut in 2013, Hujan is back with its first-everperformance with the MPYO, performing popular hits
+              such as “Bila Aku SudahTiada”, “DugaanNya” and “Mencari Konklusi”. Blending hints of alternative rockand
+              jazz melodies, Hujan’s unorthodox rock music reaches dizzying heights whenpaired with the energetic MPYO
+              and the orchestra’s spellbinding symphonicarrangements.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card4.jpg""
+          alt=" Card image cap" />
+          <h3 class="card-header">Global Investing Made Simple</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Get insights to the 4 Step Formula that has made Kathlyn Toh
+              successful in the stock market. Earn a return better than the
+              average stock and property market, consistently - because you know
+              how to manage your own funds. Multiply your return by 3 to 5 times
+              using leverage, safely. Protect your income even during bad times.
+              Why you can achieve your financial goals sooner through investing
+              or trading.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+
+          </div>
         </div>
       </div>
-      <br />
-      <hr />
-      <br />
 
-      <div style="margin: auto" id="box1">
-        <img class="iqbal-img" src="./media/Iqbal m.png" />
-        <p style="font-weight: bold; font-size: 30px; font-style: inherit;">Iqbal M Modenrokes</p>
-        <p style="font-style: italic;">15 February</p>
-        <p style="font-style: oblique;">RM30</p>
-        <p style="font-weight: bold; font-style: italic; ">Art of Speed, MAEPS, Serdang</p>
+      <div class="d-flex flex-row justify-content-between mt-3">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card4.jpg""
+          alt=" Card image cap" />
+          <h3 class="card-header">Global Investing Made Simple</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Get insights to the 4 Step Formula that has made Kathlyn Toh
+              successful in the stock market. Earn a return better than the
+              average stock and property market, consistently - because you know
+              how to manage your own funds. Multiply your return by 3 to 5 times
+              using leverage, safely. Protect your income even during bad times.
+              Why you can achieve your financial goals sooner through investing
+              or trading.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card5.jfif" alt="Card image cap" />
+          <h3 class="card-header">SKY DOME NYE 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Together with Red Room KL, NAHSYK is very excited to announce his
+              first NYE party. Come join him and some of the hottest acts in SEA
+              as we countdown the end of a decade with night of infectious
+              energy under the sky at Kingz Club Rooftop on Dec 31
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card6.jfif" alt="Card image cap" />
+          <h3 class="card-header">AICI 3rd Asia Conference 2020</h3>
+          <div class="card-body">
+            <p class="card-text">
+              Setting on stage a platform where movers and shakers of the image
+              industry can gather together in one place to interchange ideas,
+              best practices, emerging trends and case studies focusing on
+              challenging issues that continue to shape the Image Consulting
+              industry. Connecting nearly 250 image consultants and partners
+              from the Asia Pacific region, South America, Canada, United States
+              and Australia at this most anticipated education event.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+          </div>
+        </div>
+
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card8.jfif" alt="Card image cap" />
+          <h3 class="card-header">Growing SMEs with on-demand talents</h3>
+          <div class="card-body">
+            <p class="card-text">
+              SMEs struggle with growing exponentially. Making the most out
+              every invested ringgit is not easy, and results are expected to
+              come quick. On-demand talent is an amazingly efficient way to get
+              things done, move forward. Without incurring into fixed costs,
+              SMEs can tap into a pool of talent available region-wide, gaining
+              the ability to get a project going within just a few days.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+          </div>
+        </div>
       </div>
-    </div style="clear:both">
-  </fieldset style="width: 700px;">
+
+      <div class="d-flex flex-row mt-3">
+        <div class="card flex-fill" style="width: 18rem;">
+          <img class="card-img-top" src="../../../media/img/cards/card9.jfif" alt="Card image cap" />
+          <h3 class="card-header">ICDXA</h3>
+          <div class="card-body">
+            <p class="card-text">
+              The 1st International Conference on Digital Transformation and
+              Applications brings you a unique experience with the speeches from
+              renowned speakers, best presentations, roundtable discussions,
+              networking opportunities and many more.
+            </p>
+            <button class=" btn btn-primary">Buy Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center">Page 1 of 1</p>
+
+  </main>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </html>
