@@ -3,44 +3,137 @@
 <head>
   <title>Login Dashboard</title>
   <link rel="stylesheet" href="loginDash.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-  <fieldset style="height: 510px; width: 500px; margin: auto;">
-    <div>
-      <h1>Profile</h1>
-      <hr />
-      <br />
-      <div>
-        <img class="default-img" src="./media/default.png" />
-      </div>
-      <div>
-        <p style="font-size: 30px; font-weight: bold; font-family: Arial;">Name</p>
-      </div>
-      <div>
-        <p style="font-size: 20px; font-weight: normal; font-family: Arial;">User</p>
-      </div>
-      <div>
-        <p style="font-size: 25px; font-weight: normal; font-family: Arial; font-style: oblique;"><img
-            class="malaysia-flag" src="media/flag-of-Malaysia.jpg" /> Malaysia</p>
-      </div>
-      <hr />
-      <br />
-      <div>
-        <input type="button" value="Tickets" id="box1">
-      </div>
-      <br />
-      <br />
-      <div>
-        <input type="button" value="Memberships" id="box2">
-      </div>
-      <br />
-      <br />
-      <div>
-        <input type="button" value="About Us" id="box3">
+  <nav class="navbar navbar-dark navbar-expand-lg p-0 " style="background-color: #1c2260;">
+    <a class="navbar-brand pl-2" href="#"><img src="../../../media/logo/colorlogo.svg" width="130" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <form class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-md-auto mt-3 inline ml-sm-3 ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="# ">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-3" href="# ">Account</a>
+        </li>
+
+        <li>
+          <input class="form-control mr-sm-2  " type="search" placeholder="Search events" aria-label="Search" />
+        </li>
+        <li>
+          <button class="btn btn-outline-success  my-sm-0 ml-3 mr-3" type="submit">
+            Search
+          </button>
+        </li>
+      </ul>
+    </form>
+  </nav>
+
+  <main class="p-4">
+    <div class="d-flex justify-content-between">
+      <h2>Account Dashboard</h2>
+      <p>GetTicket account since January 17, 2020</p>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center">
+      <img class="profile" src="../../../media/images/blank-profile-picture-973460_640.jpg" alt="" height="300px">
+      <div class="ml-4">
+        <div>
+          <h4>Name</h4>
+          <p class="font-weight-light">John user</p>
+        </div>
+        <div>
+          <h4>Account email address</h4>
+          <p class="font-weight-light">johnuser@mmu.com</p>
+        </div>
+        <div>
+          <h4>Bio & interest</h4>
+          <p class="font-weight-light">I am John, I am a student currently studying in Cyberjaya, Malaysia. You can see
+            me at almost all concert
+            event in Malaysia</p>
+        </div>
       </div>
     </div>
-  </fieldset>
+    <hr>
+    <div class="d-flex justify-content-center">
+      <div>
+        <h3>Your next event</h3>
+        <div class="card" style="width: 18rem;">
+          <img src="../../../media/images/Hujan10-003-1024x681.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hujan album launching</h5>
+            <p class="card-text">
+              <ul class="ml-2">
+                <li>Date: 12 January 2020</li>
+                <li>Time: 8.00p.m - 10.30p.m</li>
+                <li>Location: MAEPS, Serdang</li>
+              </ul>
+            </p>
+            <a href="#" class="btn btn-primary">Your ticket</a>
+          </div>
+        </div>
+      </div>
+      <div class="ml-4">
+        <h3>Past Event</h3>
+        <div class="card" style="width: 18rem;">
+          <img src="../../../media/images/51569722415_existreu11.jpg" class="card-img-top" alt="..." height="190px">
+          <div class="card-body">
+            <h5 class="card-title">Exist Reunion</h5>
+            <p class="card-text">
+              <ul class="ml-2">
+                <li>Date: 7 January 2020</li>
+                <li>Time: 8.00p.m - 10.00p.m</li>
+                <li>Location: Astro, Bukit Jalil</li>
+              </ul>
+            </p>
+            <a href="#" class="btn btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+      <div class="ml-4">
+        <div class="card" style="width: 18rem; margin-top: 40px;">
+          <img
+            src="../../../media/images/2017-Taipei-Marathon-kicked-off-at-front-of-Presidential-Office-Plaza-2-1440x725.jpg"
+            height="190px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Exist Reunion</h5>
+            <p class="card-text">
+              <ul class="ml-2">
+                <li>Date: 13 January 2020</li>
+                <li>Time: 8.00a.m - 12.00p.m</li>
+                <li>Location: Bukit Jalil Track</li>
+              </ul>
+            </p>
+            <a href="#" class="btn btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </main>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

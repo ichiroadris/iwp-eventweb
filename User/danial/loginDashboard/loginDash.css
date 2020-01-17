@@ -1,47 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  margin: auto;
-  padding: 10px;
-  border: 1px solid black;
+  background-color: #f4f6f8;
 }
-h1 {
-  font-size: 20px;
-  font-weight: normal;
-}
-.default-img {
+
+.profile {
+  background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
   width: 200px;
-  height: 100px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.malaysia-flag {
-  width: 30px;
-  height: 15px;
-}
-p {
-  text-align: center;
-}
-#box1 {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 535px;
-  border: black;
-  background-color: aliceblue;
-}
-#box2 {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 535px;
-  border: black;
-  background-color: aliceblue;
-}
-#box3 {
-  position: absolute;
-  width: 200px;
-  height: 30px;
-  left: 535px;
-  border: black;
-  background-color: aliceblue;
+  height: 250px;
 }
