@@ -7,3 +7,7 @@
 body {
   background-color: #f4f6f8;
 }
+
+.desc {
+  flex-basis: 65%;
+}
